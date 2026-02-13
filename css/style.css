@@ -62,7 +62,7 @@ header nav a.active {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/kalen-emsley-mountains.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/peter-robbins-mountains.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
