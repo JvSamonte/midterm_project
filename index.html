@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Mountain Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Rocky Mountain Explorer</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="media.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Experience the Magic of the Rockies</h1>
+        <p>From Calgary and Edmonton to Banff and Jasper.</p>
+    </section>
+
+    <div class="container main-layout">
+        
+        <main>
+            <section class="booking-container">
+                <h2>Plan Your Adventure</h2>
+                <form id="bookingForm">
+                    <label for="name">Purchaser Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Purchaser Email:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="destination">Destination/Route:</label>
+                    <select id="destination">
+                        <option value="50">Calgary to Banff ($50)</option>
+                        <option value="90">Edmonton to Jasper ($90)</option>
+                        <option value="70">Calgary to Lake Louise ($70)</option>
+                    </select>
+
+                    <label for="travelers">Number of Travelers:</label>
+                    <input type="number" id="travelers" min="1" max="10" value="1">
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="student">
+                        <label for="student">Student Discount (15% off)</label>
+                    </div>
+
+                    <div class="radio-group">
+                        <label>Payment Method:</label><br>
+                        <input type="radio" name="payment" value="online" checked> Pay Online
+                        <input type="radio" name="payment" value="arrival"> Pay on Arrival
+                    </div>
+
+                    <h3 id="totalDisplay">Estimated Total: $0.00</h3>
+
+                    <div class="button-group">
+                        <button type="submit">Book Trip</button>
+                        <button type="reset" id="resetBtn">Reset</button>
+                    </div>
+                </form>
+                
+                <div id="successMessage" class="hidden"></div>
+            </section>
+        </main>
+
+        <aside id="weather">
+            <h3>Live Weather (Banff)</h3>
+            <div id="weather-content">
+                <p>Loading weather data...</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Rocky Mountain Explorer</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
