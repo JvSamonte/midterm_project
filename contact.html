@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rocky Mountain Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Rocky Mountain Explorer</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="media.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Get in Touch</h1>
+        <p>Have a question about schedules or policies? We are here to help.</p>
+
+        <section class="contact-layout">
+            <div class="form-wrapper">
+                <form id="contactForm">
+                    <label for="c-name">Full Name:</label>
+                    <input type="text" id="c-name" placeholder="John Doe">
+                    <span class="error-msg" id="error-name">Name is required.</span>
+
+                    <label for="c-email">Email Address:</label>
+                    <input type="email" id="c-email" placeholder="john@example.com">
+                    <span class="error-msg" id="error-email">Must be a valid email (@ and .).</span>
+
+                    <label for="c-phone">Phone Number (10 digits):</label>
+                    <input type="tel" id="c-phone" placeholder="1234567890">
+                    <span class="error-msg" id="error-phone">Must be exactly 10 digits.</span>
+
+                    <label for="c-message">Message:</label>
+                    <textarea id="c-message" rows="5"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <div id="contactSuccess" class="hidden success-box"></div>
+            </div>
+
+            <aside class="contact-info">
+                <h3>Our Office</h3>
+                <p><strong>Address:</strong><br>101 Mountain View Drive<br>Calgary, AB, T2P 1A1</p>
+                <p><strong>Phone:</strong><br>+1 (587) 315-0315</p>
+                <p><strong>Email:</strong><br>hello@rockymountainexplorer.ca</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rocky Mountain Explorer</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
