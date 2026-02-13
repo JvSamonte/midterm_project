@@ -139,8 +139,17 @@ form input:focus, form select:focus {
     box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
 }
 
-.checkbox-group, .radio-group {
-    margin: 20px 0;
+
+.checkbox-group {
+    display: flex
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
 }
 
 #totalDisplay {
